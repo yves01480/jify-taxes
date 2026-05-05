@@ -3,7 +3,7 @@ Contributors: jifycloud
 Tags: tax, taiwan, gui, invoice, woocommerce
 Requires at least: 5.8
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 2.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,11 @@ Jify Taxes is built specifically for WooCommerce stores operating in Taiwan. It 
 3.  Go to WooCommerce Settings > Tax to configure your rates.
 
 == Changelog ==
+
+= 2.4.0 =
+*   Per-item tax computed after discount.
+*   Improved rounding for Taiwan tax accounting.
+*   Optional shipping/discount adjustments to base price.
 
 = 1.0.0 =
 *   Initial release.
