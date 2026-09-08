@@ -1,5 +1,41 @@
 # Jify Taxes
 
+**[下載 v2.4.0 安裝 ZIP](https://github.com/yves01480/jify-taxes/releases/download/v2.4.0/jify-taxes.zip)** · [版本紀錄](https://github.com/yves01480/jify-taxes/releases) · [試用／問題回報](https://github.com/yves01480/jify-taxes/issues/new?template=store-feedback.md)
+
+免費開源（GPL-2.0-or-later）。已有 WordPress＋WooCommerce 商店即可在測試站開始；主機與其他服務費用另計。
+
+## 需要逐商品設定稅額計算？把計算基礎看清楚。
+
+適合需要驗證特定 WooCommerce 稅額呈現方式的店家與建站者：針對商品／規格設定稅率，選擇是否扣除整合的商品折扣，以及是否分攤運費。
+
+- **逐商品設定：** 選擇哪些商品啟用、使用什麼稅率。
+- **查看折扣後基礎：** 支援讀取 Jify Discount 提供的商品折扣資料。
+- **調整運費計入方式：** 可將運費按符合商品的金額比例分攤。
+
+### 先用一張測試購物車核對
+
+設定商品金額 NT$1,000、可讀取的商品折扣 NT$100、稅率 5%，啟用扣除折扣且不計入運費時：
+
+`(1,000 − 100) × 5% = NT$45`
+
+這是設定值的運算範例；實際商店應採用的稅務處理，需要依交易情境另行確認。
+
+**第一次試用：** 在商品／規格啟用 Jify 稅金，設定稅率，分別比較無折扣、有折扣與含運費的結果。
+
+> 此外掛將計算結果呈現為「稅金」費用列，並抑制原生稅額輸出；不是 WooCommerce 完整原生稅務流程或電子發票系統。需要原生稅務報表、退款或會計串接的商店，請先驗證相容性。
+
+### 下載後怎麼安裝
+
+1. 下載上方 **jify-taxes.zip**，不需解壓縮。
+2. 到 WordPress **外掛 → 安裝外掛 → 上傳外掛**，選取 ZIP 後安裝、啟用。
+3. 依上面的第一次試用情境設定；版本需求與完整行為請見下方英文文件。
+
+有想套用的店家情境？[告訴我你的設定與預期結果](https://github.com/yves01480/jify-taxes/issues/new?template=store-feedback.md)，也歡迎回報第一次安裝卡在哪一步。GitHub Issue 是公開的，請使用測試資料。
+
+---
+
+## English documentation
+
 > Taiwan-oriented tax calculation controls for WooCommerce stores.
 
 ![License: GPLv2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)
